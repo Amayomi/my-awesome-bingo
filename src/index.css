@@ -6,6 +6,11 @@
   --color-marked: #dcfce7;
   --color-marked-border: #22c55e;
   --color-bingo: #fbbf24;
+  --color-cream: #fef5e7;
+  --color-lavender: #e6d5f5;
+  --color-peach: #fdb4a4;
+  --color-espresso: #2c1810;
+  --font-display: 'Dongle', sans-serif;
 }
 
 html,
@@ -18,4 +23,13 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, sans-serif;
   -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
