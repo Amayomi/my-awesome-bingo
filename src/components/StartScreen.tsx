@@ -8,7 +8,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
       <div className="text-center max-w-lg w-full space-y-6">
         {/* Hero Section */}
         <div className="animate-[slideUpFade_0.6s_ease-out_forwards] opacity-0">
-          <div className="text-6xl mb-4">☕</div>
+          <div className="text-6xl mb-4" role="img" aria-label="Coffee cup">☕</div>
           <h1 className="text-7xl font-display text-espresso mb-2">
             Soc Ops
           </h1>
@@ -45,7 +45,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
                 <span className="text-2xl font-display text-white">1</span>
               </div>
               <div className="flex-1 text-left">
-                <div className="text-2xl mb-1">👥</div>
+                <div className="text-2xl mb-1" role="img" aria-label="People icon">👥</div>
                 <p className="text-sm text-espresso/80 font-body">
                   Find people who match the prompts
                 </p>
@@ -60,7 +60,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
                 <span className="text-2xl font-display text-white">2</span>
               </div>
               <div className="flex-1 text-left">
-                <div className="text-2xl mb-1">✅</div>
+                <div className="text-2xl mb-1" role="img" aria-label="Checkmark icon">✅</div>
                 <p className="text-sm text-espresso/80 font-body">
                   Tap squares as you discover matches
                 </p>
@@ -75,7 +75,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
                 <span className="text-2xl font-display text-white">3</span>
               </div>
               <div className="flex-1 text-left">
-                <div className="text-2xl mb-1">🎉</div>
+                <div className="text-2xl mb-1" role="img" aria-label="Celebration icon">🎉</div>
                 <p className="text-sm text-espresso/80 font-body">
                   Complete 5 in a row to celebrate!
                 </p>
