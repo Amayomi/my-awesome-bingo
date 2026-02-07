@@ -8,7 +8,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
       <div className="text-center max-w-lg w-full space-y-6">
         {/* Hero Section */}
         <div className="animate-[slideUpFade_0.6s_ease-out_forwards] opacity-0" style={{ animationDelay: '0ms' }}>
-          <div className="text-6xl mb-4 animate-[fadeIn_0.8s_ease-out]">☕</div>
+          <div className="text-6xl mb-4">☕</div>
           <h1 className="text-7xl font-display text-espresso mb-2">
             Soc Ops
           </h1>
