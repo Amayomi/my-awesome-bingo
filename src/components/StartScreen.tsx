@@ -21,7 +21,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
         {/* Hero Section */}
         <div className="mb-12">
           {/* Coffee cup emoji with bounce-in */}
-          <div className="text-7xl mb-6 opacity-0 animate-bounceIn" style={{ animationDuration: '250ms' }}>
+          <div className="text-7xl mb-6 opacity-0 animate-bounceIn">
             ☕
           </div>
           
@@ -31,7 +31,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
           </h1>
           
           {/* Tagline in Dongle font */}
-          <p className="text-4xl text-gray-700 mb-3 opacity-0 animate-fadeIn" style={{ fontFamily: 'Dongle, sans-serif', animationDelay: '400ms' }}>
+          <p className="text-4xl text-gray-700 mb-3 opacity-0 animate-fadeIn" style={{ fontFamily: 'var(--font-dongle)', animationDelay: '400ms' }}>
             Break the ice. Find your people.
           </p>
           
@@ -47,12 +47,12 @@ export function StartScreen({ onStart }: StartScreenProps) {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-start">
             {/* Step 1 */}
-            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '0ms' }}>
+            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '800ms' }}>
               <div className="relative inline-block mb-3">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                   1
                 </div>
-                <div className="absolute -top-1 -right-1 text-3xl animate-[spin_3s_linear_infinite]">
+                <div className="absolute -top-1 -right-1 text-3xl animate-[rotate_3s_linear_infinite]">
                   🎯
                 </div>
               </div>
@@ -62,12 +62,12 @@ export function StartScreen({ onStart }: StartScreenProps) {
             </div>
 
             {/* Step 2 */}
-            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '200ms' }}>
+            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '1000ms' }}>
               <div className="relative inline-block mb-3">
                 <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                   2
                 </div>
-                <div className="absolute -top-1 -right-1 text-3xl animate-[spin_3s_linear_infinite]" style={{ animationDelay: '0.5s' }}>
+                <div className="absolute -top-1 -right-1 text-3xl animate-[rotate_3s_linear_infinite]" style={{ animationDelay: '0.5s' }}>
                   👆
                 </div>
               </div>
@@ -77,12 +77,12 @@ export function StartScreen({ onStart }: StartScreenProps) {
             </div>
 
             {/* Step 3 */}
-            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '400ms' }}>
+            <div className="flex-1 opacity-0 animate-fadeInUp transition-transform duration-300 hover:scale-110 hover:-translate-y-2" style={{ animationDelay: '1200ms' }}>
               <div className="relative inline-block mb-3">
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                   3
                 </div>
-                <div className="absolute -top-1 -right-1 text-3xl animate-[spin_3s_linear_infinite]" style={{ animationDelay: '1s' }}>
+                <div className="absolute -top-1 -right-1 text-3xl animate-[rotate_3s_linear_infinite]" style={{ animationDelay: '1s' }}>
                   🎉
                 </div>
               </div>
@@ -96,11 +96,12 @@ export function StartScreen({ onStart }: StartScreenProps) {
         {/* CTA Button */}
         <button
           onClick={onStart}
-          className="relative group w-full max-w-sm bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-5 px-10 rounded-2xl text-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 opacity-0 animate-fadeInUp [animation-delay:600ms] [animation-fill-mode:forwards]"
+          className="relative group w-full max-w-sm bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-5 px-10 rounded-2xl text-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95"
           style={{ 
+            opacity: 0,
             animationName: 'fadeInUp, pulse',
             animationDuration: '0.6s, 2.5s',
-            animationDelay: '600ms, 1200ms',
+            animationDelay: '1400ms, 2000ms',
             animationIterationCount: '1, infinite',
             animationFillMode: 'forwards, none',
             animationTimingFunction: 'ease-out, ease-in-out'
